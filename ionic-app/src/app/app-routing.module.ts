@@ -23,6 +23,18 @@ const routes: Routes = [
     path: 'forgot-password',
     loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
+  {
+    path: 'make-appointment',
+    loadChildren: () => import('./appointment/make/make.module').then( m => m.MakePageModule)
+  },
+  {
+    path: 'edit-appointment',
+    loadChildren: () => import('./appointment/edit/edit.module').then( m => m.EditPageModule)
+  },
+  {
+    path: 'home-appointment',
+    loadChildren: () => import('./appointment/home/home.module').then( m => m.HomePageHomeAppointmentModule)
+  },
 ];
 
 @NgModule({
